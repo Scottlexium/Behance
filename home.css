@@ -1,0 +1,450 @@
+ :root{
+   --primary:#fff;
+ }
+
+
+*{
+  margin: 5px ;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --primary:#ffffff;
+  --secondary: #ffffff;
+  --tertiary: blue;
+  --extra:black;
+  --font: black;
+
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+*{
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body{
+  background: var(--primary);
+
+  
+}
+nav{
+  background: var(--secondary);
+}
+nav::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+nav .logo{
+  color: var(--font);
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+nav .left-nav a{
+  color: black;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+nav .left-nav a::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width .3s;
+}
+nav .left-nav a:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+nav ul{
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  margin: 0 14px;
+}
+nav ul li a{
+  color: var(--font);
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 16px;
+  padding: 8px 15px;
+}
+
+nav ul ul ul{
+  border-top: none;
+}
+
+
+
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+
+@media all and (max-width:968px){
+    nav ul{
+      margin-right: 0px;
+      float: left;
+    }
+    nav .logo{
+      padding-left: 30px;
+      width: 100%;
+    }
+    nav ul li, nav ul ul li{
+      display: block;
+      width: 100%;
+    }
+    nav ul ul {
+      top: 70px;
+      position: static;
+      border-top: none;
+      float:none;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    nav ul ul ul{
+      position: static;
+    }
+nav ul ul li{
+  border-bottom: 0px;
+}
+nav ul ul a{
+  padding-left: 40px;
+}
+nav ul ul ul a{
+  padding-left: 10px;
+}
+
+    nav ul li a:hover{
+      box-shadow: none;
+    }
+
+}
+
+
+
+.Adobe_logo{
+  margin-top: 15px;
+}
+
+.left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top-first-nav{
+  border-bottom: solid 0.5px #f2f2f2;
+  height: 55px;
+}
+
+.btn1{
+  border: solid 1px #f2f2f2;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s linear;
+  font-weight: bolder;
+}
+
+.btn1:hover{
+  background: #cfcfcf;
+}
+
+
+.btn2{
+  border: solid 1px none;
+  background: #0057ff;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s linear;
+  font-weight: bolder;
+}
+
+.btn2:hover{
+  background: #063fb3;
+}
+
+.main-logo{
+  width: 100px;
+  height: 45px;
+}
+.Search-tabItem-2dT{
+  transition: all .2s linear;
+}
+.btn3:hover{
+  background: #cfcfcf;
+  border-radius: 10px;
+  padding-left: 2px;
+}
+
+.SearchTypeahead-icon-20K{
+  fill: dimgray;
+  height: 23px;
+  position: absolute;
+  margin-left: 20px;
+  width: 23px;
+  margin-top: 12px;
+
+  }
+}
+
+form{
+  background: black;
+  display: flex;
+
+  
+}
+.search{
+  display: flex;
+  border: solid 1px gray;
+  border-radius: 50px 50px 50px 50px;
+  background: #f9f9f9;
+  font-family: inherit;
+  width: 100%;
+  
+
+}
+#search-box{
+  border: none;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 20px;
+  background: #f9f9f9;
+  color: #969696;
+  width: 100%;
+  font-family: inherit;
+  text-overflow: ellipsis;
+}
+
+#search-box:focus{
+  border-color: inherit;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.fixed{
+  padding: 24px;  
+}
+
+
+.Search-tabNavigation-2vG {
+  background-color: #fff;
+  border-bottom-right-radius: 999px;
+  border-left: 1px solid #ccc;
+  border-top-right-radius: 999px;
+  float: right;
+  flex-wrap: wrap;
+
+
+
+}
+.Search-tabList-1PE {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+  
+  
+
+  
+}
+
+
+.btns{
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .2s linear;
+}
+
+.btns:hover{
+  background: #e4e4e4;
+  border-radius: 999px;
+  padding: 6px 4px;
+
+}
+
+.e2e-Search-projects-tab{
+  border: solid 2px black;
+  background: black;
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.shape_icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  
+}
+.Tool-icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  
+}
+
+.color-wheel-icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  
+}
+.Location-icon{
+  width: 12px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.SchoolFilter-icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+
+.current_select{
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.filterbar{
+  margin-top: 30px;
+  display: flex;
+  border: solid 2px #e8e8e8;
+  border-radius: 4px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  padding: 5px;
+  position: absolute;
+}
+
+
+.dropdown_icon{
+  width: 10px;
+  margin-left: 10px;
+  height: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+  margin-top: 10px;
+
+}
+
+.text-reveal{
+  padding-left: 100px;
+  position: absolute;
+  margin-left: 10px;
+  list-style: none;
+  background: white;
+  margin-top: -20px;
+  width:44%;
+  display: none;
+}
+.text-reveal ul{
+  list-style: none;
+}
+
+
+.active_selection{
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+}
+select{
+  background: none;
+  display: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+
+.FilterDropdown{
+  display: none;
+  
+  position: fixed;
+  list-style: none;
+  margin-top: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+}
+
+
+
+
+.SelectMm-selected{
+  list-style: none;
+  margin-top: 10px;
+}
+
+
+.first:hover{
+  border: solid 2px black;
+}
+
+.second:hover{
+  border: solid 2px black;
+}
+
+
+.third:hover{
+  border: solid 2px black;
+}
+
+.forth:hover{
+  border: solid 2px black;
+}
+
+.fifth:hover{
+  border: solid 2px black;
+}
+
+
+/*Editing of the banner */
+
+.hero{
+  height: 100%;
+  background: url(./images/banner/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+

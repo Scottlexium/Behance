@@ -1,0 +1,638 @@
+
+.scroll-bg{
+    
+    width: 400px;
+;
+    
+}
+.scroll-div{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+}
+.scroll-object{
+    
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+.scroll-list{
+    list-style: none;
+    line-height: 28px;
+    text-indent: 10px;
+}
+
+
+.home{
+    
+    display: none;
+    width: 370px;
+    position: fixed;
+    list-style: none;
+    margin-top: 80px;
+    z-index: 1;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+}
+
+#scrollable{
+    width: 100%;
+    border-left: 1px solid #bebebe;
+    max-height: 420px;
+}
+
+.scroll-list li:hover{
+    background: blue;
+    color: white;
+}
+
+
+
+.tools-dropdown-div{
+    
+    display: none;
+    margin-top: 90px;
+    margin: 90px 178px ;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+    padding: 30px;
+    width: 415px;
+    z-index: 999;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.tools-dropdown-div ul {
+    margin-top: 10px;
+    list-style: none;
+}
+.tools-dropdown-div li{
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#second-search-input{
+    border: solid 1px #cccccc;
+    border-radius: inherit;
+    color: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    padding: 8px 1px;
+    width: 100%;
+    text-indent: 10px;
+    
+}
+/* 
+#color-div{
+    width: 300px;
+    margin-left: 293px;
+    margin-top: 74px;
+    background: white;
+    position: fixed;
+    
+    padding: 10px;
+}
+#canvas{
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 150px;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+    background-color: #000;
+    
+}
+input#colorpic{
+    margin-left: 15px;
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+}
+#colorCode{
+   
+    margin-left: 10px;
+    width:60px;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+} */
+
+
+
+
+
+
+.color-box{
+    position: fixed;
+    display: none;
+    border-radius: 5px;
+    z-index: 1;
+    background: fixed;
+    background-color: white;
+    margin-left: 300px;
+    margin-top: 80px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+    padding-bottom: 10px;
+
+}
+#canvas{
+    width: 300px;
+    height: 150px;
+    border: 1px solid #d2d2d2;
+    background-color: #000;
+    
+}
+input#colorpic{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    float: left;
+}
+#colorCode{
+    margin-top: 4px;
+    width:80px;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-left: 10px;
+}
+
+#sort-div-home{
+    display: none;
+
+}
+.sort-master-div, .sort-right{
+    margin-top: 10px;
+    position: fixed;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    
+}
+.sort-list-div{
+    display: block;
+    position: fixed;
+    background: white;
+    padding: 25px 24px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+}
+.sort-list-div li{
+    height: 30px;
+    cursor: pointer;
+}
+.sort-list-div li:hover{
+    color: blue;
+}
+
+
+
+
+
+
+.home-card{
+    margin-top: -20px;
+    display: flex;
+    z-index: -1;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+}
+.card-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+    list-style: none;
+}
+
+.card-list img{
+    display: block;
+    width: 370px;
+    height: 290px;
+    border-radius: 5px;
+    
+    
+}
+
+
+.li-div{
+    margin-top: 20px;
+}
+/* Overlay Effect */
+
+.li-div #faded {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 0;
+    text-align: center;
+    width: 370px;
+    left: 2;
+    top: 0;
+    bottom: 0;
+    margin-top: 19px;
+    border-radius: 5px;
+    color: white;
+    right: 2;
+    z-index: 10;
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+  *, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .main-title{
+    color: #2d2d2d;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .container{
+    padding: 1em 0;
+    width: 30%;
+    float: left;
+  }
+  @media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 390px;
+    }
+  }
+  
+  .container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 896px){
+    .container{
+      width: 390px;
+    }
+  }
+  .content {
+    position: relative;
+    display: block;
+    width: 370px;
+    height: 290px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+
+
+  .fadeIn-top{
+      display: flex;
+  }
+
+
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 5%;
+    left: 5%;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-20%, -50%);
+    /* -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; */
+  }
+  
+  .content:hover .content-details{
+    top: 10%;
+    left: 10%;
+    opacity: 1;
+  }
+
+  .bookmark {
+    height: 100px;
+    transition: height .2s;
+  }
+  
+  .content:hover .bookmark{
+      height: 80px;
+  }
+
+  .bookmark .bookmark-tag:hover{
+      height:65px;
+  }
+  .bookmark-img:hover{
+      margin-top: 7px;
+  }
+
+.tip{
+    visibility: hidden;
+}
+.bookmark:hover .tip{
+    visibility: visible;
+}
+
+
+  .content:hover .bookmark {
+    top: 10%;
+    left: 17%;
+    opacity: 1;
+  }
+
+  
+  .content-details .droped{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  
+  .fadeIn-top{
+    top: 10%;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.grid-menu{
+    display: grid;
+    grid-template-row: auto;
+}
+  
+  .member{
+    width:33.3333%;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    height:100%;
+    
+    
+  }
+  .member:hover img{
+    opacity:0.5;
+  }
+  .member:hover .desc{
+    display:block;
+  }
+  img{
+    max-width: 100%;
+  }
+  .desc{
+    display:none;
+    position:absolute;
+    top:40%;  
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+  /*   display:none; */
+    /* color:white;
+  }
+.hover-text{
+    margin-bottom:20px;
+    font-size:2em;
+    font-weight:100;
+  }
+  
+  a{
+    border:1px solid #fff;
+    text-decoration:none;
+    padding:10px 20px;
+    margin-top:20px;
+    font-size:0.8em;
+    text-transform:uppercase;
+  } */ 
+
+
+.div{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.822);
+}
+.sub-container{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.sub-text{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.Stats-stats{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -35px;
+    fill: gray;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+.InfinityFooter{
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border-top: 1px solid #e1e1e1;
+    bottom: 0;
+    display: -webkit-box;
+    display: flex;
+    height: 33px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.InfinityFooter-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* THis below is for the fixed footer */
+
+
+
+.drop-menu{
+  display: none;
+  position: absolute;
+  width: 170px;
+  height: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px 0 #ccc;
+  background: white;
+}
+
+.language{
+  height: 500px;
+  text-align: center;
+  width: 110px;
+  font-size: 9px;
+}
+.language-div{
+}
+
+
+
+.drop-wrapper:hover .drop-menu{
+display: block;
+}
+
+.drop-menu.active{
+  display: block;
+}
+
+.dropdown{
+  top: 100%;
+  margin-top: 0.125rem;
+  
+}
+
+.dropup{
+  bottom: 100%;
+  margin-bottom: 0.125rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  
+}
+
+.dropup a:hover{
+  background: blue;
+  color: white;
+
+}
+.drop-wrapper{
+  position: relative;
+}
+.btn{
+  padding: 0.5rem 1.2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.drop-menu a{
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-top: 7px;
+  text-decoration: none;
+  color: #343434;
+}
+
+
+
+
+
+
+
+
+

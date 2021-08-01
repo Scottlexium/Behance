@@ -1,0 +1,81 @@
+
+.scroll-bg{
+    
+    width: 400px;
+;
+    
+}
+.scroll-div{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+}
+.scroll-object{
+    
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+.scroll-list{
+    list-style: none;
+    line-height: 28px;
+    text-indent: 10px;
+}
+
+
+.home{
+    
+    display: none;
+    width: 370px;
+    position: fixed;
+    list-style: none;
+    margin-top: 80px;
+    z-index: 1;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+}
+
+#scrollable{
+    width: 100%;
+    border-left: 1px solid #bebebe;
+    max-height: 420px;
+}
+
+.scroll-list li:hover{
+    background: blue;
+    color: white;
+}
+
+
+
+#second-search-input{
+    border: solid 1px #cccccc;
+    border-radius: inherit;
+    color: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    height: 32px;
+    padding: 8px 1px;
+    width: 100%;
+    text-indent: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

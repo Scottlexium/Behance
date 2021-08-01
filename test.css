@@ -232,7 +232,6 @@ input#colorpic{
     gap: 10px;
     align-items: center;
     justify-content: center;
-    
     list-style: none;
 }
 
@@ -330,7 +329,7 @@ input#colorpic{
     height: 290px;
     border-radius: 5px;
     max-width: 400px;
-    margin: auto;
+    margin: auto 30px;
     overflow: hidden;
     cursor: pointer;
   }
@@ -469,8 +468,6 @@ input#colorpic{
     position:relative;
     cursor:pointer;
     height:100%;
-    
-    
   }
   .member:hover img{
     opacity:0.5;
@@ -514,7 +511,7 @@ input#colorpic{
 }
 .sub-container{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 38px;
 }
 .sub-text{
     font-weight: lighter;

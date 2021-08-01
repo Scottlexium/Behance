@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Generic */
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 1rem;
+  }
+  
+  /**/
+  .main {
+    position: relative;
+    width: 1290px;
+    min-width: 1000px;
+    min-height: 600px;
+    height: 600px;
+    padding: 25px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    padding: 25px;
+    background: #fff;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  
+  .form__input {
+    width: 350px;
+    height: 20px;
+    margin-top: -200px;
+    position: absolute;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #eaeaea;
+    color: #747474;
+    font-size: 12px;
+    font-weight: 400;
+    
+  }
+  label{
+      color: black;
+      padding: absolute;
+      z-index: 9;
+      margin-top: 40px;
+  }
+  p{
+      z-index: 9;
+  }
+  h3{
+      text-decoration: none;
+      color: black;
+      font-weight: lighter;
+      color: #505050;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: -360px;
+      position: absolute;
+  }
+  h3 a{
+      color: blue;
+      text-decoration: none;
+  }
+  
+  
+  .title {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 700;
+    color: #181818;
+    margin-top: -450px;
+    line-height: 200px;
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+  }
+  
+  .btn{
+      position: absolute;
+      text-align: center; 
+      margin-top: -80px;
+      align-self:flex-end;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      padding: 10px;
+      border-radius: 20px;
+      width: 100px;
+      background-color: #0d66d0;
+      border-color: #0d66d0;
+      color: #fff;
+  }
+  .btn:hover{
+      background-color: #105ebd;
+  }
+  
+  /**/
+  .a-container {
+    z-index: 100;
+    left: calc(100% - 600px);
+  }
+  
+  .a-container{
+      width: 450px;
+      border-radius: 5px;
+  }
+  
+  
+  .switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400px;
+    padding: 50px;
+    z-index: 200;
+    background: transparent;
+    overflow: hidden;
+  }
+  
+  
+
+
+
+.lineText{
+    position: absolute;
+}
+  .div{
+      width: 50%;
+      height: 2px;
+      background: #eaeaea;
+      position: absolute;
+      z-index: -1;
+      margin-top: 40px;
+  }
+  .text{
+      font-size: 14px;
+      z-index: 10;
+      background: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+
+  }
+
+  
+  .google {
+      margin: 25px;
+      
+      width: 80%;
+      min-width: 344px;
+      max-width: 184px;
+      height: 42px;
+      background-color: #fcfcfc;
+      border-radius: 999px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+      cursor: pointer;
+      align-self: center;
+      user-select: none;
+      justify-content: center;
+      transition: all 400ms ease 0s;
+      display: flex;
+  }
+  .google-btn .google-icon-wrapper {
+      position: absolute;
+      margin-top: -1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      text-indent: -70px;
+  }
+  .google-btn .google-icon-svg {
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+      user-select: none
+  }
+  .google .btn-text {
+      float: right;
+      margin: 11px 14px 40px 40px;
+      color: #757575;
+      font-size: 14px;
+      letter-spacing: .2px;
+      font-family: Roboto;
+      user-select: none
+  }
+
+
+.google-btn{
+    cursor: pointer;
+    z-index: -29090;
+}
+
+
+
+  /* The first canvas of the page */
+
+.behance-logo{
+    width: 60px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.be-text{
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #f4f4f4;
+}
+
+.facebook{
+    margin: 25px;
+        width: 80%;
+        color: white;
+      min-width: 344px;
+      max-width: 184px;
+      height: 42px;
+      background-color: #3b5998;
+      border-radius: 999px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+      cursor: pointer;
+      align-self: center;
+      user-select: none;
+      justify-content: center;
+      transition: all 400ms ease 0s;
+      display: flex;
+}
+.fb-text{
+    float: right;
+    margin: 11px 14px 40px 40px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .2px;
+    font-family: Roboto;
+    user-select: none
+}
+
+.apple{
+    margin: 25px;
+    width: 80%;
+    color: white;
+    min-width: 344px;
+    max-width: 184px;
+    height: 42px;
+    background-color: black;
+    border-radius: 999px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    align-self: center;
+    user-select: none;
+    justify-content: center;
+    transition: all 400ms ease 0s;
+    display: flex;
+}
+
+.apple-text{
+    float: right;
+    margin: 11px 14px 40px 40px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .2px;
+    font-family: Roboto;
+    user-select: none
+}
+
+
+.footer {
+    position: fixed;
+    display: flex;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    text-indent: 10px;
+ }
+
+ .footer-img{
+     width: 20px;
+     margin-left: 10px;
+ }
